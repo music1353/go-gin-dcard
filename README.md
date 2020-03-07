@@ -55,33 +55,25 @@ There are some demands in the assignment:
 
    
 
-   Following is the example of the response：
+   #### Following is the example of the response：
 
-   **content-length →**45
+   ~~~
+   content-length → 45
+   content-type → application/json; charset=utf-8
+   date → Sat, 07 Mar 2020 11:54:18 GMT
+   x-ratelimit-remaining → 985
+   x-ratelimit-reset → 37m9s
+   ~~~
 
-   **content-type →**application/json; charset=utf-8
+   #### If you over the limit, remaining will represent with 0
 
-   **date →**Sat, 07 Mar 2020 11:54:18 GMT
-
-   **x-ratelimit-remaining →**985
-
-   **x-ratelimit-reset →**37m9s
-
-   
-
-   If you over the limit, remaining will represent with 0
-
-   **content-length →**63
-
-   **content-type →**application/json; charset=utf-8
-
-   **date →**Sat, 07 Mar 2020 12:01:04 GMT
-
-   **x-ratelimit-remaining →**0
-
-   **x-ratelimit-reset →**30m23s
-
-   
+   ~~~
+   content-length → 63
+   content-type → application/json; charset=utf-8
+   date → Sat, 07 Mar 2020 12:01:04 GMT
+   x-ratelimit-remaining → 0
+   x-ratelimit-reset → 30m23s
+   ~~~
 
 ## API Doc
 
